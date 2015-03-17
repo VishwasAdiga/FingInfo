@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    
+    $('#article').wikiblurb({
+    page: 'India',
+    section: 0,
+    removeLinks: true,
+    type: "text"
+    });
+    
+    chrome.tabs.executeScript(null,
+    {code:"alert(window.getSelection().toString());"})
+
+});
